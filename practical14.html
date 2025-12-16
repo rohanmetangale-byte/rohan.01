@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Café</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <header>
+            <!-- Live Clock + Specials -->
+<section class="live-banner">
+    <div id="clock"></div>
+    <p class="special">☕ Today's Special: Hazelnut Latte – Only 250Rs!</p>
+</section>
+    <div class="logo"><span class="cafe-name">☕ Cozy Café ☕</span></div>
+    <nav>
+</header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to Cozy Café</h1>
+        <p>Your daily dose of coffee and comfort</p>
+        <a href="#menu" class="btn">Explore Menu</a>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+            <div class="item">
+                <img src="https://tse2.mm.bing.net/th/id/OIP._zGQNgkjM2Vz6WN-ui36ewHaHa?cb=ucfimg2&ucfimg=1&w=626&h=626&rs=1&pid=ImgDetMain&o=7&rm=3s0" alt="Espresso">
+                <h3>Espresso</h3>
+                <p>Rich and bold coffee shot.</p>
+                <span>300Rs</span>
+            </div>
+            <div class="item">
+                <img src="https://th.bing.com/th/id/OIP.tkBlxXUAba2nj9zPz8n6pAHaHa?o=7&cb=ucfimg2&rm=3&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Latte">
+                <h3>Latte</h3>
+                <p>Creamy milk with smooth coffee.</p>
+                <span>450Rs</span>
+            </div>
+            <div class="item">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.S9bx6hAnY1_ZjQuN_3AtxQHaHa?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Cappuccino">
+                <h3>Cappuccino</h3>
+                <p>Perfect balance of coffee and foam.</p>
+                <span>400Rs</span>
+            </div>
+             <div class="item">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.FJ6HiWwXHJGcz3xE-UP8QQHaGS?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Espresso"</h3>
+                
+                <h3>Macha</h3>
+                <p>Rich and bold coffee shot.</p>
+                <span>325Rs</span>
+            </div>
+        </div>
+    </section>
+    <!-- Featured Specials Section -->
+<section id="specials" class="specials">
+    <h2>Featured Specials</h2>
+    <div class="special-items">
+        <div class="special-card">
+            <img src="https://via.placeholder.com/250x180" alt="Pumpkin Spice Latte">
+            <h3>Pumpkin Spice Latte</h3>
+            <p>Warm spices blended with creamy coffee, perfect for the season.</p>
+            <span>500Rs</span>
+        </div>
+        <div class="special-card">
+            <img src="https://via.placeholder.com/250x180" alt="Chocolate Croissant">
+            <h3>Chocolate Croissant</h3>
+            <p>Flaky pastry filled with rich chocolate, baked fresh daily.</p>
+            <span>350</span>
+        </div>
+        <div class="special-card">
+            <img src="https://via.placeholder.com/250x180" alt="Caramel Macchiato">
+            <h3>Caramel Macchiato</h3>
+            <p>Sweet caramel layered with espresso and milk foam.</p>
+            <span>480Rs</span>
+        </div>
+    </div>
+</section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>
+            Cozy Café is your neighborhood spot for freshly brewed coffee, homemade pastries, and warm vibes.
+            We believe in serving happiness in every cup.
+        </p>
+    </section>
+
+    <!-- ✅ Testimonials Add-on -->
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <blockquote>"Best latte in town!" ⭐⭐⭐⭐⭐</blockquote>
+        <blockquote>"Cozy vibes and friendly staff." ⭐⭐⭐⭐</blockquote>
+        <blockquote>"Pastries are heavenly, and the coffee is perfect." ⭐⭐⭐⭐⭐</blockquote>
+    </section> 
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <!-- About Section -->
+<section id="about" class="about">
+    <h2>About Us</h2>
+    <p>
+        Cozy Café is your neighborhood spot for freshly brewed coffee, homemade pastries, and warm vibes.
+        We believe in serving happiness in every cup.
+    </p>
+    <!-- Owner's Name -->
+    <p class="owner">Owned By Divya P and managed by <strong>Rohan M</strong></p>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 Cozy Café | Designed with ❤️</p>
+    <p class="owner-footer">Owner: Divya Patel</p>
+</footer>
+<script>
+function updateClock() {
+    const now = new Date();
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const seconds = String(now.getSeconds()).padStart(2, '0');
+    document.getElementById('clock').textContent = `🕒 ${hours}:${minutes}:${seconds}`;
+}
+setInterval(updateClock, 1000);
+updateClock();
+</script>
+</body>
+</html>
